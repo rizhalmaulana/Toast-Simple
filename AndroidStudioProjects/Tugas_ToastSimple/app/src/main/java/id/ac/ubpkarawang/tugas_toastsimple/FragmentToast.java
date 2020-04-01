@@ -1,7 +1,6 @@
 package id.ac.ubpkarawang.tugas_toastsimple;
 
 
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -17,14 +16,14 @@ import android.widget.Toast;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FragmentTugasAwal extends Fragment implements View.OnClickListener {
+public class FragmentToast extends Fragment implements View.OnClickListener {
 
     public TextView txtAngka;
     public CardView cvReset, cvToast, cvCount;
     public MainActivity activity;
     int mCount = 0;
 
-    public FragmentTugasAwal() {
+    public FragmentToast() {
         // Required empty public constructor
     }
 
@@ -32,7 +31,7 @@ public class FragmentTugasAwal extends Fragment implements View.OnClickListener 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_fragment_tugas_awal, container, false);
+        return inflater.inflate(R.layout.fragment_fragment_toast, container, false);
     }
 
     @Override

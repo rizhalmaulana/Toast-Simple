@@ -9,7 +9,7 @@
     <item
         android:id="@+id/navigation_lain"
         android:icon="@drawable/ic_whatshot_black_24dp"
-        android:title="@string/lainnya" />
+        android:title="@string/kalkulator" />
 
     <item
         android:id="@+id/navigation_lainnya"

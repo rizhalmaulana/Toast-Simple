@@ -11,14 +11,14 @@ public class MainActivity extends AppCompatActivity {
         Fragment fragment;
         switch (item.getItemId()) {
             case R.id.navigation_home:
-                fragment = new FragmentTugasAwal();
+                fragment = new FragmentToast();
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.container_layout, fragment, fragment.getClass().getSimpleName())
                         .commit();
                 return true;
 
             case R.id.navigation_lain:
-                fragment = new FragmenLain();
+                fragment = new FragmenKalkulator();
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.container_layout, fragment, fragment.getClass().getSimpleName())
                         .commit();
@@ -40,13 +40,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        loadFragment(new FragmentTugasAwal());
+        loadFragment(new FragmentToast());
         BottomNavigationView navView = findViewById(R.id.navigation);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
     }
 
-    private boolean loadFragment(FragmentTugasAwal fragmentTugasAwal) {
+    private boolean loadFragment(FragmentToast fragmentTugasAwal) {
         if (fragmentTugasAwal != null) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.container_layout, fragmentTugasAwal)

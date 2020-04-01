@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Tugas_ToastSimple</string>
-    <string name="tugas_awal">Toast Simple</string>
-    <string name="lainnya">Tugas Lainnya</string>
+    <string name="tugas_awal">Toast</string>
+    <string name="kalkulator">Kalkulator</string>
     <string name="lainnya2">Tugas Lainnya</string>
     <string name="Home">Halaman Awal</string>
 
