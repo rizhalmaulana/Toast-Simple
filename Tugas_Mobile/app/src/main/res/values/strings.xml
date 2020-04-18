@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Aplikasi UTS</string>
+    <string name="tugas_awal">Toast</string>
+    <string name="kalkulator">Kalkulator</string>
+    <string name="uts">Home</string>
+    <string name="Home">Halaman Awal</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reset">RESET</string>
+    <string name="todo">TODO</string>
+    <string name="zakat_ku">ZAKAT KU</string>
+    <string name="toast_count_simple">TOAST COUNT SIMPLE</string>
+    <string name="toast">TOAST</string>
+    <string name="_0">0</string>
+    <string name="count">COUNT</string>
+    <string name="bilangan_2">Bilangan 2</string>
+    <string name="bilangan_1">Bilangan 1</string>
+    <string name="muhamad_rizal_maualana">MUHAMAD RIZAL MAUALANA</string>
+    <string name="_17416255201104">17416255201104</string>
+    <string name="kalkulator_2">KALKULATOR</string>
+    <string name="hasil">HASIL</string>
+    <string name="aplikasi_tugas">APLIKASI TUGAS</string>
+    <string name="mobile_programming">MOBILE PROGRAMMING</string>
+    <string name="hitung">HITUNG</string>
+    <string name="jumlah">Masukkan Jumlah Orang</string>
+    <string name="kembali">Kembali</string>
+    <string name="tugas">TUGAS</string>
+    <string name="kehadiran">KEHADIRAN</string>
+    <string name="hitung_nilai_matkul">Hitung Nilai Matkul</string>
+    <string name="deden_wahiddin_m_kom">Deden Wahiddin, M.Kom</string>
+    <string name="masukkan_nilai_tugas">Masukkan Nilai Tugas</string>
+    <string name="ujian_tengah_semester">Ujian Tengah Semester</string>
+    <string name="masukkan_nilai_uts">Masukkan Nilai UTS</string>
+    <string name="ujian_akhir_semester">Ujian Akhir Semester</string>
+    <string name="masukkan_nilai_uas">Masukkan Nilai UAS</string>
+    <string name="project">PROJECT</string>
+    <string name="menu">Menu</string>
+    <string name="hitung_nilai">Hitung Nilai</string>
+    <string name="informasi">Informasi</string>
+
+    <string-array name="daftar_hadir">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+</resources>

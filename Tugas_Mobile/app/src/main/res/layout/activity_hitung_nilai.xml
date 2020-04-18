@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true"
+    tools:context=".HitungNilaiActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:paddingBottom="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/todo"
+            android:minHeight="250dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background"
+            app:layout_constraintBottom_toTopOf="@+id/cardView"
+            app:layout_constraintDimensionRatio="H,16:11.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="110dp" />
+
+        <ImageButton
+            android:id="@+id/backButtonNilai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-150dp"
+            android:background="@drawable/roundedcorner"
+            android:contentDescription="@string/kembali"
+            android:padding="7dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="15dp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:animateLayoutChanges="true"
+            android:background="@color/colorPrimary"
+            android:elevation="10dp"
+            app:cardCornerRadius="16dp"
+            app:cardPreventCornerOverlap="true"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="lollipop">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/TOP_START"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="135dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_demi"
+                    android:maxLines="1"
+                    android:padding="0dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/hitung_nilai_matkul"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="135dp" />
+
+                <TextView
+                    android:id="@+id/tv_item_remarks"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_demi"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_item_name"
+                    android:text="@string/mobile_programming"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp" />
+
+                <RatingBar
+                    android:id="@+id/rb_userrating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numStars="1"
+                    android:layout_marginStart="20dp"
+                    android:paddingBottom="15dp"
+                    android:progressTint="@android:color/holo_orange_dark"
+                    android:rating="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_voter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:paddingBottom="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@id/rb_userrating"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_item_remarks"
+                    android:text="@string/deden_wahiddin_m_kom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginEnd="16dp" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="310dp"
+            android:layout_marginTop="-90dp"
+            app:cardCornerRadius="5dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            android:layout_marginLeft="310dp">
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@mipmap/ic_calculator"
+                android:contentDescription="@string/todo" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingTop="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/kehadiran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_demi"
+                android:text="@string/kehadiran"
+                android:textColor="@color/black_main"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="jelly_bean" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:entries="@array/daftar_hadir"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/kehadiran" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner1">
+
+                <EditText
+                    android:id="@+id/textDialog1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="13"
+                    android:fontFamily="@font/avenir_demi"
+                    android:hint="@string/masukkan_nilai_tugas"
+                    android:inputType="phone"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
+                    tools:targetApi="jelly_bean" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input1">
+
+                <EditText
+                    android:id="@+id/textDialog2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="13"
+                    android:fontFamily="@font/avenir_demi"
+                    android:hint="@string/masukkan_nilai_uts"
+                    android:inputType="phone"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent"
+                    tools:targetApi="jelly_bean" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input2">
+
+                <EditText
+                    android:id="@+id/textDialog3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="13"
+                    android:fontFamily="@font/avenir_demi"
+                    android:hint="@string/masukkan_nilai_uas"
+                    android:inputType="phone"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvHitungNilai"
+                android:layout_width="305dp"
+                android:layout_height="40dp"
+                android:layout_margin="20dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/input3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="@string/hitung"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cvHasil"
+                android:layout_width="305dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvHitungNilai">
+
+                <TextView
+                    android:id="@+id/txtHasilNilai"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:fontFamily="@font/avenir_medium"
+                    tools:text="Hasil Dan Mutu"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
