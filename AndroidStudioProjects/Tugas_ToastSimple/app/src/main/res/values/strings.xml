@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tugas_ToastSimple</string>
+    <string name="tugas_awal">Toast</string>
+    <string name="kalkulator">Kalkulator</string>
+    <string name="lainnya2">Tugas Lainnya</string>
+    <string name="Home">Halaman Awal</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reset">RESET</string>
+    <string name="todo">TODO</string>
+    <string name="toast_count_simple">TOAST COUNT SIMPLE</string>
+    <string name="toast">TOAST</string>
+    <string name="_0">0</string>
+    <string name="count">COUNT</string>
+
+</resources>
