@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Kuliner Ku</string>
+    <string name="detail_kuliner">Detail Kuliner</string>
+    <string name="foto_kuliner">Foto Kuliner</string>
+    <string name="daftar_kuliner">Daftar Kuliner</string>
+    <string name="favorite">FAVORITE</string>
+    <string name="share">SHARE</string>
+    <string name="nama_kuliner">Nama Kuliner</string>
+    <string name="harga_kuliner">Harga Kuliner</string>
+    <string name="asal_kuliner">Asal Kuliner</string>
+    <string name="nama">Muhamad Rizal Maulana</string>
+    <string name="todo">TODO</string>
+    <string name="list_kuliner">LIST KULINER</string>
+    <string name="grid_kuliner">GRID KULINER</string>
+    <string name="my_kuliner">MY KULINER</string>
+    <string name="dicoding">DICODING</string>
+    <string name="back">Back</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="_4_5">4.5</string>
+    <string name="_4_5_5">4.5/5</string>
+    <string name="about">ABOUT</string>
+    <string name="muhamad_rizal_m">Muhamad Rizal M</string>
+    <string name="inirizalmaulana1_gmail_com">inirizalmaulana1@gmail.com</string>
+    <string name="android_developer_dan_web_developer">Android Developer Dan Web Developer</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="muhamad_rizal_maulana">Muhamad Rizal Maulana</string>
+    <string name="email">Email</string>
+    <string name="tempat_tinggal">Tempat Tinggal</string>
+    <string name="karawang">Karawang</string>
+    <string name="profile">Profile</string>
+    <string name="menu_kuliner">MENU KULINER</string>
+</resources>

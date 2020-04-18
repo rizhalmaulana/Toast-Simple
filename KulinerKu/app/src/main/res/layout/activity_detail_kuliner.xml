@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true"
+    tools:context=".DetailKulinerActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clipToPadding="false"
+        android:paddingBottom="24dp">
+
+        <ImageView
+            android:id="@+id/img_poster"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:minHeight="270dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="H,16:11.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/dicoding"
+            android:contentDescription="@string/todo" />
+
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/roundedcorner"
+            android:contentDescription="@string/back"
+            android:padding="7dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="245dp"
+            android:animateLayoutChanges="true"
+            android:background="@color/colorPrimary"
+            android:elevation="10dp"
+            app:cardCornerRadius="16dp"
+            app:cardPreventCornerOverlap="true"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/TOP_START"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="135dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_demi"
+                    android:maxLines="1"
+                    android:padding="0dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Baso Malang" />
+
+                <TextView
+                    android:id="@+id/tv_item_remarks"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_demi"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_item_name"
+                    tools:text="Rp. 15000" />
+
+                <TextView
+                    android:id="@+id/tv_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:paddingBottom="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_item_remarks"
+                    android:text="@string/_4_5" />
+
+                <RatingBar
+                    android:id="@+id/rb_userrating"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:numStars="1"
+                    android:paddingBottom="10dp"
+                    android:progressTint="@android:color/holo_orange_dark"
+                    android:rating="1"
+                    app:layout_constraintStart_toEndOf="@id/tv_rating"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_item_remarks" />
+
+                <TextView
+                    android:id="@+id/tv_voter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:paddingBottom="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@id/rb_userrating"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_item_remarks"
+                    android:text="@string/_4_5_5" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="285dp"
+            android:background="@android:color/white"
+            android:paddingTop="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_title_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/avenir_demi"
+                android:text="@string/deskripsi"
+                android:textColor="@color/black_main"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/content_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/avenir_medium"
+                android:paddingStart="0dp"
+                android:paddingEnd="26dp"
+                android:textColor="@color/black_sub"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title_desc"
+                tools:text="Loreng Dimsum Molor Si Agus Hehe" />
+
+            <TextView
+                android:id="@+id/tv_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenir_demi"
+                android:text="@string/nama_kuliner"
+                android:textColor="@color/black_main"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content_detail" />
+
+            <TextView
+                android:id="@+id/content_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/avenir_medium"
+                android:paddingStart="0dp"
+                android:paddingEnd="26dp"
+                android:textColor="@color/black_sub"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_overview"
+                tools:text="Loreng Dimsum Molor Si Agus Hehe" />
+
+            <TextView
+                android:id="@+id/tv_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenir_demi"
+                android:text="@string/harga_kuliner"
+                android:textColor="@color/black_main"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content_nama" />
+
+            <TextView
+                android:id="@+id/content_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/avenir_medium"
+                android:textColor="@color/black_sub"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_genre"
+                tools:text="Loreng Dimsum Molor Si Agus Hehe" />
+
+            <TextView
+                android:id="@+id/tv_realease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/avenir_demi"
+                android:text="@string/asal_kuliner"
+                android:textColor="@color/black_main"
+                android:textSize="23sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content_harga" />
+
+            <TextView
+                android:id="@+id/content_asal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/avenir_medium"
+                android:textColor="@color/black_sub"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_realease"
+                tools:text="Loreng Dimsum Molor Si Agus Hehe" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="13dp"
+            app:cardCornerRadius="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/img_photo"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/table"
+                android:contentDescription="@string/todo" />
+        </android.support.v7.widget.CardView>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
